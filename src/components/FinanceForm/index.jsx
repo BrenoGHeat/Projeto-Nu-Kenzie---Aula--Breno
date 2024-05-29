@@ -15,7 +15,7 @@ export const FinanceForm = () => {
             <input type="text" name="" id="" />
         </div>
 
-            <button type="text">Inserir Valor</button>        
+            <button class="btn">Inserir Valor</button>        
         </section>
     )
 }
