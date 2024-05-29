@@ -1,7 +1,7 @@
 export const FinanceCard = () => {
     return(
-        <div>
-            <li>
+        
+            <li className="container month">
                 <h3>Salário - Mês Dezembro</h3>
                 <p>Entrada</p>
                 
@@ -10,7 +10,7 @@ export const FinanceCard = () => {
                     <button>Excluir</button>
                 </div>
             </li>
-        </div>
+      
 
     )
 }
