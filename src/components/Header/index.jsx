@@ -5,8 +5,8 @@ import styles from "./style.module.scss";
 
 export const Header = () => {
     return (
-        <header>
-            <div className={styles.header}>
+        <header  className={styles.header}>
+            <div className={styles.headerContainer}>
             <img src={Logo} alt="" />
             </div>
         </header>

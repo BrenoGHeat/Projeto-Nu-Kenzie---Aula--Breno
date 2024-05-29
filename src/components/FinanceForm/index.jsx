@@ -4,23 +4,32 @@ import styles from "./style.module.scss";
 export const FinanceForm = () => {
   return (
    
-      <div className={styles.finance}>
-      <div className="container lg">
-        <div className="container sm">
-          <label htmlFor="">Descrição</label>
-          <input type="text" placeholder="Digite aqui sua descrição" />
+      <form className={styles.finance}>
+      
+          <div>
+          <label htmlFor="text">Descrição</label>
+          <input id="text"  type="text" placeholder="Digite aqui sua descrição" />
           <p>Ex: Compra de roupas</p>
+          </div>
 
-          <label htmlFor="Valor">Valor (R$) </label>
-          <input type="number" name="" id="" />
+          <div>
+          <label htmlFor="valor">Valor (R$) </label>
+          <input type="number" name="" id="valor" />
+          </div>
 
-          <label htmlFor="">Tipo de Valor</label>
-          <input type="text" name="" id="" />
+          <div>
+          <label htmlFor="type">Tipo de Valor</label>
+          <select id="type">
+            <option value="entrada">Entrada</option>
+            <option value="saida">Saída</option>
+          </select>
+      
+          </div>
 
           <button class="btn">Inserir Valor</button>
-          </div>
-        </div>
-      </div>
+         
+          </form>
+     
     
   );
 };
