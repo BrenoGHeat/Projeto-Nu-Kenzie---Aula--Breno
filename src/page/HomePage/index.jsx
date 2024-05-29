@@ -1,19 +1,13 @@
-import { FinanceForm } from "../../components/FinanceForm"
-import { FinanceList } from "../../components/FinanceList"
-import { Header } from "../../components/Header"
-import { Total } from "../../components/Total"
+import { DefaultTemplate } from "../../components/DefaultTemplate"
+import { FinanceSection } from "../../components/FinanceSection"
+
 
 export const HomePage = () => {
     return(
         <>
-            <Header/>
-            <main>
-                <FinanceForm />
-                <FinanceList />
-                <Total />
-
-            </main>
-
+           <DefaultTemplate>
+                <FinanceSection />
+           </DefaultTemplate>
         
         </>
     )
