@@ -8,7 +8,7 @@ import styles from "./style.module.scss";
 export const FinanceSection = () => {
   return (
     <section className={styles.section}>
-      <div>
+      <div className="container one">
         <FinanceForm />
         <Total />
       </div>

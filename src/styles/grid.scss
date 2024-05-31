@@ -41,15 +41,19 @@
 
 .container.month{
     max-width: 560px;
-    height:87px;
+    height: 87px;
+    gap:124px;
+    padding: 1rem;
     border-left: 4px solid var(--color-secondary);
-
+    border-radius: 4px;
+    display: flex;
     background-color: var(--color-gray-one);
-  
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
 
-    & div{
-            display: flex;
-    }
+    align-items: flex-end;
+   
 
     & button{
         width: 49px;
@@ -66,9 +70,39 @@
         color: var(--color-gray-four);
     }
 
-
 }
 
+
+.mini.div.one{
+    display: flex;
+    flex-direction: column;
+    gap:11px;
+
+
+    & p{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--color-gray-three);
+    }
+}
+
+.mini.div.two{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 6px;
+  
+    align-items: flex-end;
+
+    & p{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--color-gray-four);
+    }
+
+}
 
 .mini.container{
     display: flex;
@@ -124,4 +158,31 @@
         color: var(--color-gray-three);
     }
 
+}
+
+.container.one{
+    padding-top: 39px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.container.card{
+    padding-top: 39px;
+  
+}
+
+.h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-gray-four);
+}
+
+.mini.card{
+    display: flex;
+    
+    flex-direction: column;
+
+    gap: 30px;
 }
