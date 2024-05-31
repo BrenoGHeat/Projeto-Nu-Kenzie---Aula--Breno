@@ -6,18 +6,18 @@ export const FinanceForm = () => {
    
       <form className={styles.finance}>
       
-          <div>
+          <div className="mini container">
           <label htmlFor="text">Descrição</label>
           <input id="text"  type="text" placeholder="Digite aqui sua descrição" />
           <p>Ex: Compra de roupas</p>
           </div>
 
-          <div>
+          <div className="mini container">
           <label htmlFor="valor">Valor (R$) </label>
-          <input type="number" name="" id="valor" />
+          <input type="number" name="" id="valor" class="value" />
           </div>
 
-          <div>
+          <div className="container option"> 
           <label htmlFor="type">Tipo de Valor</label>
           <select id="type">
             <option value="entrada">Entrada</option>
