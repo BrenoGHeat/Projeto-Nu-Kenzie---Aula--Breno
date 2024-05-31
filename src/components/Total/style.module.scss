@@ -1,0 +1,38 @@
+.total{
+    padding: 1rem;
+    border: 1px solid var(--color-gray-two);
+    border-radius: 4px;
+   
+    width: 355px;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+   
+    gap: 10px;
+
+
+    & span{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color:var(--color-primary);
+    }
+
+
+    & h3{
+       font-family: "Nunito Sans", sans-serif;
+       font-weight: 700;
+       font-size: 16px;
+       color:var(--color-gray-four);
+    }
+
+    & p{
+        font-family:"Nunito Sans", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--color-gray-three);
+    }
+}
