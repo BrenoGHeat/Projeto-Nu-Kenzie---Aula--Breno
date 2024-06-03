@@ -218,3 +218,16 @@
         }
 
 }
+
+@media (min-width:300px) and (max-width:900px) {
+    .mini.div.one{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    .mini.div.two{
+        display: flex;
+    }
+}

@@ -1,14 +1,14 @@
-export const FinanceCard = () => {
+export const FinanceCard = ({item}) => {
     return(
         
             <li className="container month">
                 <div className="mini div one">
-                <h3>Salário - Mês Dezembro</h3>
-                <p>Entrada</p>
+                <h3>{item.text}</h3>
+                <p>{item.type}</p>
                 </div>
                 
                 <div className="mini div two">
-                    <p>R$ 6.660,00</p>
+                    <p>{item.value}</p>
                     <button>Excluir</button>
                 </div>
             </li>
