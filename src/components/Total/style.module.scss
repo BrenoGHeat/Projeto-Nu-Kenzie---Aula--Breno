@@ -36,3 +36,11 @@
         color: var(--color-gray-three);
     }
 }
+
+
+@media (min-width:300px) and (max-width:900px) {
+    .total{
+        width: 100%;
+    }
+}
+

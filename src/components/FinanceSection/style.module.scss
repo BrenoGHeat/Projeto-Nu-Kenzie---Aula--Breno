@@ -7,3 +7,14 @@
    
     width: 100%;
 }
+
+
+
+@media (min-width:300px) and (max-width:900px) {
+    .section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}

@@ -4,6 +4,9 @@ import styles from "./style.module.scss";
 export const FinanceForm = () => {
   return (
    
+      
+
+
       <form className={styles.finance}>
       
           <div className="mini container">

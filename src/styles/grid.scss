@@ -1,19 +1,19 @@
 .container.lg{
-    max-width: 1500px;
+    max-width: 93.75rem;
     border: 1px solid var(--color-gray-three);
-    width: 355px;
-    height: 434px;
+    width: 22.188rem;
+    height: 27.125rem;
 
    
 }
 
 
 .container.sm{
-    max-width: 314.5px;
-    max-height: 362px;
+    max-width: 19.656rem;
+    max-height: 22.625rem;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 1.875rem;
 
     & input{
         padding: 0px 16px;
@@ -85,6 +85,14 @@
         font-size: 12px;
         color: var(--color-gray-three);
     }
+
+    & h3{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color:var(--color-gray-four);
+    }
+
 }
 
 .mini.div.two{
@@ -185,4 +193,28 @@
     flex-direction: column;
 
     gap: 30px;
+
+    & h3{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--color-gray-four);
+    }
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    .container.month{
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width:300px) and (max-width:900px) {
+        .container.card{
+            width: 100%;
+            display: flex;
+        }
+
 }
