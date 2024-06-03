@@ -13,7 +13,7 @@ export const FinanceSection = () => {
   const [type, setType] = useState("entrada");
   const [value, setValue] = useState("");
   const [list, setList] = useState([]);
-  
+ 
   const submit = (e) => {
     e.preventDefault();
    
@@ -38,7 +38,7 @@ export const FinanceSection = () => {
         <FinanceForm setText={setText} text={text} setValue={setValue} value={value} setType={setType} type={type} submit={submit} />
         <Total />
       </div>
-      <FinanceList list={list} />
+      <FinanceList list={list}  />
     </section>
   );
 };

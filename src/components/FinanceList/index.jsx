@@ -8,7 +8,7 @@ export const FinanceList = ({list}) => {
                
             {list.length > 0 ? list.map(item => (
                 <FinanceCard item={item} />
-            )) : <p>Você não possui nenhum lançamento</p> }
+            )) : <p className="paragraph finance">Você não possui nenhum lançamento</p> }
             </ul>
         </div>
     )

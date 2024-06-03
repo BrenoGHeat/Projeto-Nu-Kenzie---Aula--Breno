@@ -8,7 +8,7 @@ export const FinanceCard = ({item}) => {
                 </div>
                 
                 <div className="mini div two">
-                    <p>{item.value}</p>
+                    <p>R${item.value}</p>
                     <button>Excluir</button>
                 </div>
             </li>

@@ -202,6 +202,14 @@
     }
 }
 
+.paragraph.finance{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--color-gray-four);
+}
+
+
 @media (min-width:300px) and (max-width:900px) {
     .container.month{
         display: flex;
