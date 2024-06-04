@@ -1,12 +1,10 @@
-import { Header } from "../Header"
+import { Header } from "../Header";
 
-export const DefaultTemplate = ( {children} ) => {
-    return(
-        <>
-            <Header />
-            <main>
-                {children}
-            </main>
-        </>
-    )
-}
+export const DefaultTemplate = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+    </>
+  );
+};

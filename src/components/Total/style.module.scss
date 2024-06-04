@@ -3,7 +3,7 @@
     border: 1px solid var(--color-gray-two);
     border-radius: 4px;
    
-    width: 355px;
+    width: 22.188rem;
    
     display: flex;
     flex-direction: row;
@@ -41,6 +41,7 @@
 @media (min-width:300px) and (max-width:900px) {
     .total{
         width: 100%;
+        padding: 1rem;
     }
 }
 
