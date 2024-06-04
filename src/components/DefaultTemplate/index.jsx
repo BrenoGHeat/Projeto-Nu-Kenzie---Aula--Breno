@@ -1,12 +1,13 @@
 import { Header } from "../Header";
+import styles from "./style.module.scss";
 
 export const DefaultTemplate = ({ children }) => {
   return (
     <>
       <Header />
-      <main>
-        {children}
-      </main>
+      <main className={styles.main}>
+          {children}
+        </main>
     </>
   );
 };

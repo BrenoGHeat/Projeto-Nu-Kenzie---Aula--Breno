@@ -32,13 +32,13 @@ export const FinanceSection = () => {
       setType("entrada");
       setText("");
       setValue("");
-    };
+    }
   };
 
   const removeItem = (id) => {
-      const filters = list.filter(item => item.id !== id  )
-        setList(filters);
-  }
+    const filters = list.filter((item) => item.id !== id);
+    setList(filters);
+  };
 
   return (
     <section className={styles.section}>
@@ -54,7 +54,7 @@ export const FinanceSection = () => {
         />
         <Total valorTotal={valorTotal} list={list} />
       </div>
-      <FinanceList list={list} removeItem={removeItem}   />
+      <FinanceList list={list} removeItem={removeItem} />
     </section>
   );
 };
