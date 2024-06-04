@@ -1,6 +1,6 @@
-export const FinanceCard = ({ item } ) => {
+export const FinanceCard = ({ item , removeItem }) => {
   return (
-    <li className="container month">
+    <li className={`container month ${item.type === "entrada" ? "entrada" : "saida" } `}>
       <div className="mini div one">
         <h3>{item.text}</h3>
         <p>{item.type}</p>
@@ -8,8 +8,9 @@ export const FinanceCard = ({ item } ) => {
 
       <div className="mini div two">
         <p>R${item.value.toFixed(2)}</p>
-        <button>Excluir</button>
+        <button onClick={() => removeItem(item.id)}>Excluir</button>
       </div>
     </li>
   );
 };
+

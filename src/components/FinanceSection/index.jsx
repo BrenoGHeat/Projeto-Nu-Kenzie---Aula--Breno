@@ -23,6 +23,7 @@ export const FinanceSection = () => {
 
     if (text != "" && value != "") {
       const data = {
+        id: crypto.randomUUID(),
         text: text,
         value: parseFloat(value),
         type: type,
@@ -33,6 +34,11 @@ export const FinanceSection = () => {
       setValue("");
     };
   };
+
+  const removeItem = (id) => {
+      const filters = list.filter(item => item.id !== id  )
+        setList(filters);
+  }
 
   return (
     <section className={styles.section}>
@@ -46,9 +52,9 @@ export const FinanceSection = () => {
           type={type}
           submit={submit}
         />
-        <Total valorTotal={valorTotal} />
+        <Total valorTotal={valorTotal} list={list} />
       </div>
-      <FinanceList list={list}/>
+      <FinanceList list={list} removeItem={removeItem}   />
     </section>
   );
 };

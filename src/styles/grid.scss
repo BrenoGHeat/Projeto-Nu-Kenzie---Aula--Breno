@@ -43,7 +43,7 @@
     height: 5.438rem;
     gap:124px;
     padding: 1rem;
-    border-left: 4px solid var(--color-secondary);
+    border-left: 4px solid transparent;
     border-radius: 4px;
     display: flex;
     background-color: var(--color-gray-one);
@@ -53,6 +53,13 @@
 
     align-items: flex-end;
    
+    &.entrada{
+        border-color: var(--color-secondary);
+    }
+    
+    &.saida{
+        border-color: var(--color-gray-three);
+    }
 
     & button{
         width: 3.063rem;
