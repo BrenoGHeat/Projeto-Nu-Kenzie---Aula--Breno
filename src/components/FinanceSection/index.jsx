@@ -7,13 +7,13 @@ import styles from "./style.module.scss";
 
 export const FinanceSection = () => {
   const [text, setText] = useState("");
-  const [type, setType] = useState("entrada");
+  const [type, setType] = useState("Entrada");
   const [value, setValue] = useState("");
   const [list, setList] = useState([]);
 
   const calcularSaldo = (acumulador, item) => {
     const valor = parseFloat(item.value);
-    return item.type === "entrada" ? acumulador + valor : acumulador - valor;
+    return item.type === "Entrada" ? acumulador + valor : acumulador - valor;
   };
 
   const valorTotal = list.reduce(calcularSaldo, 0);
@@ -29,7 +29,7 @@ export const FinanceSection = () => {
         type: type,
       };
       list.push(data);
-      setType("entrada");
+      setType("Entrada");
       setText("");
       setValue("");
     }

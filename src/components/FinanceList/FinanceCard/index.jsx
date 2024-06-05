@@ -1,6 +1,6 @@
 export const FinanceCard = ({ item , removeItem }) => {
   return (
-    <li className={`container month ${item.type === "entrada" ? "entrada" : "saida" } `}>
+    <li className={`container month ${item.type === "Entrada" ? "entrada" : "saida" } `}>
       <div className="mini div one">
         <h3>{item.text}</h3>
         <p>{item.type}</p>
